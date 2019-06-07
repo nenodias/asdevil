@@ -10,4 +10,4 @@ data class Author(@Id val id: String? = null, val name: String, val birthDate: L
 
 @Document
 @Data
-data class Post(@Id val id: String?, val title: String, val created: LocalDate, var author: Author, val content: ByteArray)
+data class Post(@Id val id: String?, val title: String, val created: LocalDate, var author: Author, val content: String)

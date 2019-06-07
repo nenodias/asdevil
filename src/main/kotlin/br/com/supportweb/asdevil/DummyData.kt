@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.CommandLineRunner
 import org.springframework.stereotype.Component
 import reactor.core.publisher.Flux
+import java.nio.charset.Charset
 import java.time.LocalDate
 import java.util.*
 
@@ -24,7 +25,7 @@ class DummyData : CommandLineRunner {
                             Post(
                                     title = title,
                                     author = author,
-                                    content = "EITA GIOVANA".toByteArray(),
+                                    content = "EITA GIOVANA",
                                     created = LocalDate.now(),
                                     id = UUID.randomUUID().toString()
                             )
