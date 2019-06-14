@@ -1,0 +1,9 @@
+<root>
+    <item name='org.springframework.web.reactive.function.server.RouterFunction org.springframework.web.reactive.function.server.RouterFunction&lt;T&gt; andRoute(org.springframework.web.reactive.function.server.RequestPredicate, org.springframework.web.reactive.function.server.HandlerFunction&lt;T&gt;)'>
+        <annotation name='org.jetbrains.annotations.Contract'>
+            <val val="&quot;_, _ - &gt; null&quot;"/>
+        </annotation>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.annotations.NonBlocking'/>
+    </item>
+</root>

@@ -18,7 +18,7 @@ class DummyData : CommandLineRunner {
     lateinit var postRepository: PostRepository
 
     override fun run(vararg args: String?) {
-        val author: Author = Author(id = null, birthDate = LocalDate.of(1992, 11, 17), email = "horacio.dias92@gmail.com", name = "Horácio Dias")
+        val author: Author = Author(id = UUID.randomUUID().toString(), birthDate = LocalDate.of(1992, 11, 17), email = "horacio.dias92@gmail.com", name = "Horácio Dias")
         postRepository.deleteAll()
                 .thenMany(Flux.just("API REST SPRINGBOOT", "Deploy de uma aplicação", "Java 8", "Github")
                         .map { title: String ->
